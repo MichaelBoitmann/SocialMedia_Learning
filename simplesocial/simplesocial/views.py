@@ -14,6 +14,10 @@ class ThanksPage(TemplateView):
 class HomePage(TemplateView):
     template_name = "index.html"
 
+
+class Search(TemplateView):
+    template_name = "search.html"
+
     # def get(self, request, *args, **kwargs):
     #     if request.user.is_authenticated():
     #         return HttpResponseRedirect(reverse("test"))
