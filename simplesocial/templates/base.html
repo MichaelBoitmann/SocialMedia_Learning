@@ -8,7 +8,6 @@
     <title>Star Social</title>
 
     <!-- Latest compiled and minified CSS -->
-
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -37,11 +36,9 @@
     />
 
     <link rel="stylesheet" href="{% static 'simplesocial/css/master.css'%}" />
-
-    <link rel="stylesheet" href="{% static 'simplesocial/css/master.css'%}" />
   </head>
 
-  <body>
+  <header>
     <nav class="navbar mynav" role="navigation" id="navbar">
       <div class="container">
         <a class="navbar-brand mynav" href="{% url 'home' %}">Star Social</a>
@@ -93,5 +90,6 @@
     </nav>
 
     <div class="container mycontent">{% block content %} {% endblock %}</div>
-  </body>
+  </header>
+  <body></body>
 </html>
