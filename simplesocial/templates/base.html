@@ -30,10 +30,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 
     <link rel="stylesheet" href="{% static 'simplesocial/css/master.css'%}" />
   </head>
@@ -50,18 +47,8 @@
           <li><a href="{% url 'accounts:logout' %}">Log Out</a></li>
           <li>
             <form class="form-inline">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </li>
           {% else %}
@@ -70,18 +57,8 @@
           <li><a href="{% url 'accounts:signup' %}">Sign Up</a></li>
           <li>
             <form class="form-inline">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
           </li>
           {% endif %}
@@ -89,7 +66,13 @@
       </div>
     </nav>
 
-    <div class="container mycontent">{% block content %} {% endblock %}</div>
+    <div class="container mycontent">
+    {% block content %} 
+    
+    {% endblock %}
+    </div>
+
   </header>
-  <body></body>
+  <body>
+  </body>
 </html>
