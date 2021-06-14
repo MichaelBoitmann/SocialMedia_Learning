@@ -37,6 +37,8 @@ class GroupMember(models.Model):
   group = models.ForeignKey(Group,related_name='memberships')
   user = models.ForeignKey(User,related_name='user_groups')
 
+
+# the string representation of GroupMember class
   def __str__(self):
     return self.user.username
 
